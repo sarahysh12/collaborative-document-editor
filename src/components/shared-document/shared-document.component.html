@@ -1,0 +1,16 @@
+<div class="content">
+  <!-- <h1>Document Editor</h1> -->
+  <div class="row">
+    <button (click)="onClickFormat('Standard')"><i>Standard</i></button>
+    <button (click)="onClickFormat('Italic')"><i>Italic</i></button>
+    <button (click)="onClickFormat('Bold')"><b>Bold</b></button>
+    <button (click)="onClickFormat('Underline')"><u>Underline</u></button>
+  </div>
+  <div class="row">
+    <textarea rows="10" cols="150" [(ngModel)]="content" (input)="onTextAreaValueChanges($event)">
+    </textarea>
+  </div>
+  <div class="row">
+    <button (click)="displayWords()">Display Words!</button>
+  </div>
+</div>
